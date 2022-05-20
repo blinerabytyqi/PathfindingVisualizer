@@ -1,0 +1,140 @@
+/* Setting the blur effect */
+.pathfindingVisualizer {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+#firstp{
+    padding-left:270px;
+}
+
+/* Css for the Popup */
+.PopUp {
+    top: 28vh;
+    left: 20%;
+    position: absolute;
+    width: 75%;
+    height: 70vh;
+}
+
+.PopUp .PopUpTextBox {
+    width: 80%;
+    /* height: 45vh; */
+    height:48vh;
+    background-color: white;
+    z-index: 10;
+    border: 1px solid rgba(139,173,133,0.75);
+
+    /* border-radius: 20px; */
+}
+
+.PopUp .PopUpTextBox header {
+    box-sizing: border-box;
+    border: 1px solid rgba(139,173,133,0.75);
+    /* border-top-left-radius: 18px;
+    border-top-right-radius: 18px; */
+    padding: 6px 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(139,173,133,0.75);
+    color: white;
+}
+
+.PopUp .PopUpTextBox header h3 {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.PopUp .PopUpTextBox header h3:hover {
+    color: white;
+}
+
+.PopUp .PopUpTextBox .PopUpIntroductionText{
+    width: 100%;
+    height: 80%;
+}
+
+.PopUp .PopUpTextBox .PopUpIntroductionText .player{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    text-align: left;
+    padding:13px;
+   
+}
+
+.player h3{
+    margin: 10px;
+}
+
+.player img,
+.player div{
+    width:90px;
+    height:60px;
+    margin:40px;
+
+    border-radius:33px;
+    
+}
+
+.PopUp .PopUpTextBox .skipBox{
+    box-sizing: border-box;
+
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+
+.PopUp .PopUpTextBox .skipBox small span {
+    color: rgba(139,173,133,0.75);
+
+}
+
+
+.PopUp .PopUpTextBox .skipBox button{
+    color : white;
+    margin-right: 415px;
+    width: 10%;
+    background-color: rgba(139,173,133,0.75);
+    border : none;
+    transition : 0.8s;
+    padding-top:10px;
+    padding-bottom:20px;
+    margin-top:-10px;
+     
+}
+
+
+.PopUp .PopUpTextBox .skipBox button:hover{
+    color : white;
+    cursor: pointer;
+}
+
+@media(max-width:780px) {
+    .PopUp {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 200%;
+        height: 200vh;
+    }
+    .PopUp .PopUpTextBox {
+        width: 100%;
+        height: 80vh;
+        border: none;
+    }
+    .player img, .player div {
+        width: 60px;
+        height: 50px;
+    }
+    .PopUp .PopUpTextBox header {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    
+}
+
